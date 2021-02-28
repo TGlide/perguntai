@@ -5,8 +5,7 @@
   </p>
   <p align="center">
     <a href="https://flutter.dev">
-      <img src="https://img.shields.io/badge/built with-Flutter-%231389FD
-?style=for-the-badge&logo=flutter" alt="Built with Next.js">
+      <img src="https://img.shields.io/badge/built with-Flutter-%231389FD?style=for-the-badge&logo=flutter" alt="Built with Next.js">
     </a>
   </p>
 </p>
