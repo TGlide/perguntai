@@ -1,4 +1,4 @@
-package com.example.kahoot_clone
+package com.example.perguntai
 
 import io.flutter.embedding.android.FlutterActivity
 

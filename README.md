@@ -1,5 +1,5 @@
 <p align="center">
-  <h3 align="center">Kahoot clone</h3>
+  <h3 align="center">Perguntai</h3>
   <p align="center">
     Kahoot clone built with Flutter
   </p>
@@ -34,8 +34,8 @@ To get a local copy up and running follow these simple steps.
 1. Clone the repo
 
 ```sh
-git clone https://github.com/TGlide/kahoot-clone-flutter.git
-cd kahoot-clone-flutter
+git clone https://github.com/TGlide/perguntai.git
+cd perguntai
 ```
 
 ## Usage
