@@ -1,0 +1,105 @@
+
+
+
+
+
+
+
+Projeto Individual para Aquecimento da Turma
+
+
+
+
+
+
+
+Aula sobre uso do Firebase e app whatsuff
+bibliotecas e app testados com sucesso em 29/janeiro/2021
+-------------------------------------------------------------------------------------
+Crie um projeto Flutter padrão com o package 
+br.uff.ic.dm.pAAAAPsuasiniciais (dm é dispositivos móveis, AAAA ano, P período letivo)
+Ex: se seu nome for Juliana Rodrigues Kozovits e o periodo for 20202
+use o package:
+br.uff.ic.dm.p20202jrk    
+
+Se na hora de gerar o aplicativo houver algum conflito, 
+acrescente uma letra minúscula ao final começando de _a, _b, _c... Ex: br.uff.ic.dm.p20202jrk_a
+
+
+ATENÇÃO: 
+RESPEITE OS NOMES DE PACKAGE NOS TRABALHOS INDIVIDUAIS
+NO FUTURO TRABALHO EM GRUPO se seu grupo for o grupo verde use 
+a denominacao br.uff.ic.dm.p20202verde no trabalho do grupo verde
+
+a)execute-o e veja que funciona em seu emulador, não prossiga se não estiver funcionando
+Veja o vídeo que explica a instalação do ambiente de programação no sistema operacional Ubuntu 18, 20 ou superior
+b)feche o seu projeto
+
+c)vá ao gerenciador de arquivos e abra a pasta de seu projeto. 
+Elimine todo o conteúdo da pasta "test"
+c) abra o zip chatBase.zip fornecido para uma pasta ao lado (chatBase) de seu projeto 
+d) apague e coloque o novo pubspec.yaml
+e) apague a pasta lib atual colocando a pasta lib de chatBase
+f) faça o mesmo com a pasta  imagens de chatBase
+
+G) agora vem a etapa G de Google
+abrir
+https://firebase.google.com/
+fazer login com uma conta gmail.com (crie se ainda não tiver)
+crie authentication, cloud firestore, storage e definir REGRAS
+
+Faça o download do JSON com o seu package (lembrando que estou usando br.uff.ic.dm.p2020lek)
+
+Arquivos a serem verificados:
+1)trechos do pubspec.yaml  e não se esqueça de clicar no link "Pub get" após editar
+
+name: "NomeDoSeuAppSemAspas"
+eu usei p2020jrk
+
+name: p2020jrk
+description: A new Flutter application.
+...
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.3
+  firebase_core: ^0.4.5
+  cloud_firestore: ^0.13.7
+  firebase_storage: ^3.1.6
+  firebase_auth: ^0.16.1
+  image_picker: ^0.6.7+4
+ ...
+  assets:
+    - imagens/logo.png
+    - imagens/usuario.png
+    - imagens/bg.png
+    
+ (lembre-se de clicar em pub get)
+ 
+2)google-services.json (fica dentro da pasta android/app)
+esse arquivo é gerado automaticamente pelo Firebase e você precisa fazer o download
+ 
+Siga as instruções, pois você vai precisar , dependendo da versão mudar configurações
+nos dois build.gradle
+
+talvez você precise ainda acrescentar a linha multiDexEnabled em app\build.gradle
+    defaultConfig {
+        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        applicationId "br.uff.ic.dm.p20202jrk"
+        minSdkVersion 16
+        targetSdkVersion 30
+        multiDexEnabled true
+
+
+
+Extras que valem pontos:
+1- Trocar o icon default que aparece na aplicação    --> valor 50pts de 1000pts (nota dez na média final)
+Aprenda como trocar o icon de sua aplicação. Coloque sua foto como icon.
+
+2- Colocar "push notifications"			--> valor 50pts de 1000pts (nota dez na média final)
+O app a seguir usa "push notifications" para acordar uma aplicação. 
+No caso, é também um chat, mas poderia ser um alerta de 
+novo item num app de restaurante, 
+uma promoção num app de loja, um novo filme cadastrado, qualquer coisa. 
+Implementar isso no seu trabalho individual e no trabalho em grupo é fundamental.
+Exemplo com o push notifications:
+https://github.com/duytq94/flutter-chat-demo

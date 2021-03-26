@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "718218297006",
+    "project_id": "perguntai-5b3b2",
+    "storage_bucket": "perguntai-5b3b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718218297006:android:8de0738e66238d34c3373f",
+        "android_client_info": {
+          "package_name": "br.uff.ic.dm.perguntai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "718218297006-mpj0un5mh2un1mehbkq1e4n8k7t60ka0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzDsQzbg2OClgctGXqKaFRsv2W7ljYSLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "718218297006-mpj0un5mh2un1mehbkq1e4n8k7t60ka0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
