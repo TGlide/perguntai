@@ -7,13 +7,13 @@ import 'dart:io';
 
 
 final ThemeData temaIOS = ThemeData(
-    primaryColor: Colors.grey[200],
-    accentColor: Color(0xff25D366)
+    primaryColor: Color(0xff6DDCCF),
+    accentColor: Color(0xff6DDCCF)
 );
 
 final ThemeData temaPadrao = ThemeData(
-  primaryColor: Color(0xff075E54),
-  accentColor: Color(0xff25D366),
+  primaryColor: Color(0xff6DDCCF),
+  accentColor: Color(0xff6DDCCF),
 );
 
 /*
