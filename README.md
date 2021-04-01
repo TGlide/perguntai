@@ -1,16 +1,47 @@
-# p20202cinza
+<p align="center">
+  <h3 align="center">Perguntai</h3>
+  <p align="center">
+    Kahoot clone built with Flutter
+  </p>
+  <p align="center">
+    <a href="https://flutter.dev">
+      <img src="https://img.shields.io/badge/built with-Flutter-%231389FD?style=for-the-badge&logo=flutter" alt="Built with Next.js">
+    </a>
+  </p>
+</p>
 
-A new Flutter application.
+<!-- TABLE OF CONTENTS -->
+
+## Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+  - [Run App](#run-app)
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To get a local copy up and running follow these simple steps.
 
-A few resources to get you started if this is your first Flutter project:
+### Prerequisites
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+`flutter` installed on your local machine.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Installation
+
+1. Clone the repo
+
+```sh
+git clone https://github.com/TGlide/perguntai.git
+cd perguntai
+```
+
+## Usage
+
+### Run App
+
+```sh
+flutter run
+```
