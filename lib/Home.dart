@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'telas/AbaContatos.dart';
 import 'telas/AbaConversas.dart';
+import 'telas/AbaJogar.dart';
 import 'dart:io';
 import 'Login.dart';
 
@@ -47,7 +48,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
     _verificarUsuarioLogado();
     _recuperarDadosUsuario();
     _tabController = TabController(
-        length: 2,
+        length: 3,
         vsync: this
     );
 
@@ -81,7 +82,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("WhatsApp"),
+        title: Text("Responde Aí"),
         elevation: Platform.isIOS ? 0 : 4,
         bottom: TabBar(
           indicatorWeight: 4,
@@ -92,6 +93,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           controller: _tabController,
           indicatorColor: Platform.isIOS ? Colors.grey[400] : Colors.white,
           tabs: <Widget>[
+            Tab(text: "Jogar",),
             Tab(text: "Conversas",),
             Tab(text: "Contatos",)
           ],
@@ -113,6 +115,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
       body: TabBarView(
         controller: _tabController,
         children: <Widget>[
+          AbaJogar(),
           AbaConversas(),
           AbaContatos()
         ],

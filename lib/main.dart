@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'Home.dart';
 import 'Login.dart';
+import 'package:p20202cinza/partida/Jogar.dart';
 import 'RouteGenerator.dart';
 import 'dart:io';
 
