@@ -204,7 +204,7 @@ class _ConfiguracoesState extends State<Configuracoes> {
                         filled: true,
                         fillColor: Colors.white,
                         border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(32))),
+                            borderRadius: BorderRadius.circular(15))),
                   ),
                 ),
                 Padding(
@@ -214,10 +214,8 @@ class _ConfiguracoesState extends State<Configuracoes> {
                         "Salvar",
                         style: TextStyle(color: Colors.white, fontSize: 20),
                       ),
-                      color: Colors.green,
+                      color: Color.fromRGBO(33, 101, 89, 1),
                       padding: EdgeInsets.fromLTRB(32, 16, 32, 16),
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(32)),
                       onPressed: () {
                         _atualizarNomeFirestore();
                       }
