@@ -94,7 +94,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           indicatorColor: Platform.isIOS ? Colors.grey[400] : Colors.white,
           tabs: <Widget>[
             Tab(text: "Jogar",),
-            Tab(text: "Conversas",),
+            Tab(text: "Partidas",),
             Tab(text: "Contatos",)
           ],
         ),

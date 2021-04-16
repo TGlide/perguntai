@@ -12,8 +12,8 @@ class Login extends StatefulWidget {
 
 class _LoginState extends State<Login> {
 
-  TextEditingController _controllerEmail = TextEditingController(text: "lek@gmail.com");
-  TextEditingController _controllerSenha = TextEditingController(text: "1234567");
+  TextEditingController _controllerEmail = TextEditingController();
+  TextEditingController _controllerSenha = TextEditingController();
   String _mensagemErro = "";
 
   _validarCampos(){
@@ -45,7 +45,7 @@ class _LoginState extends State<Login> {
 
     }else{
       setState(() {
-        _mensagemErro = "Preencha o E-mail utilizando @";
+        _mensagemErro = "Preencha o E-mail corretamente";
       });
     }
 
@@ -95,7 +95,7 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(color: Color(0xff075E54)),
+        decoration: BoxDecoration(color: Color.fromRGBO(72, 153, 138, 1)),
         padding: EdgeInsets.all(16),
         child: Center(
           child: SingleChildScrollView(
@@ -123,7 +123,7 @@ class _LoginState extends State<Login> {
                         filled: true,
                         fillColor: Colors.white,
                         border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(32))),
+                            borderRadius: BorderRadius.circular(15))),
                   ),
                 ),
                 TextField(
@@ -137,7 +137,7 @@ class _LoginState extends State<Login> {
                       filled: true,
                       fillColor: Colors.white,
                       border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(32))),
+                          borderRadius: BorderRadius.circular(15))),
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 16, bottom: 10),
@@ -146,11 +146,8 @@ class _LoginState extends State<Login> {
                         "Entrar",
                         style: TextStyle(color: Colors.white, fontSize: 20),
                       ),
-                      color: Colors.green,
+                      color: Color.fromRGBO(33, 101, 89, 1),
                       padding: EdgeInsets.fromLTRB(32, 16, 32, 16),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(32)
-                      ),
                       onPressed: () {
                         _validarCampos();
                       }),
@@ -160,7 +157,8 @@ class _LoginState extends State<Login> {
                     child: Text(
                         "Não tem conta? cadastre-se!",
                         style: TextStyle(
-                            color: Colors.white
+                            color: Colors.white,
+                            fontSize: 18
                         )
                     ),
                     onTap: (){
@@ -179,7 +177,8 @@ class _LoginState extends State<Login> {
                     child: Text(
                       _mensagemErro,
                       style: TextStyle(
-                          color: Colors.red,
+                        backgroundColor: Colors.black12,
+                          color: Colors.orangeAccent,
                           fontSize: 20
                       ),
                     ),

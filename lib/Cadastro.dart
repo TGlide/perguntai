@@ -13,9 +13,9 @@ class Cadastro extends StatefulWidget {
 class _CadastroState extends State<Cadastro> {
 
   //Controladores
-  TextEditingController _controllerNome = TextEditingController(text: "lek");
-  TextEditingController _controllerEmail = TextEditingController(text: "lek@gmail.com");
-  TextEditingController _controllerSenha = TextEditingController(text: "1234567");
+  TextEditingController _controllerNome = TextEditingController();
+  TextEditingController _controllerEmail = TextEditingController();
+  TextEditingController _controllerSenha = TextEditingController();
   String _mensagemErro = "";
 
   _validarCampos(){
@@ -103,7 +103,7 @@ class _CadastroState extends State<Cadastro> {
         title: Text("Cadastro"),
       ),
       body: Container(
-        decoration: BoxDecoration(color: Color(0xff075E54)),
+        decoration: BoxDecoration(color: Color.fromRGBO(72, 153, 138, 1)),
         padding: EdgeInsets.all(16),
         child: Center(
           child: SingleChildScrollView(
@@ -114,8 +114,8 @@ class _CadastroState extends State<Cadastro> {
                   padding: EdgeInsets.only(bottom: 32),
                   child: Image.asset(
                     "imagens/usuario.png",
-                    width: 200,
-                    height: 150,
+                    width: 150,
+                    height: 100,
                   ),
                 ),
                 Padding(
@@ -131,7 +131,7 @@ class _CadastroState extends State<Cadastro> {
                         filled: true,
                         fillColor: Colors.white,
                         border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(32))),
+                            borderRadius: BorderRadius.circular(15))),
                   ),
                 ),
                 Padding(
@@ -146,7 +146,7 @@ class _CadastroState extends State<Cadastro> {
                         filled: true,
                         fillColor: Colors.white,
                         border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(32))),
+                            borderRadius: BorderRadius.circular(15))),
                   ),
                 ),
                 TextField(
@@ -160,7 +160,7 @@ class _CadastroState extends State<Cadastro> {
                       filled: true,
                       fillColor: Colors.white,
                       border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(32))),
+                          borderRadius: BorderRadius.circular(15))),
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 16, bottom: 10),
@@ -169,10 +169,8 @@ class _CadastroState extends State<Cadastro> {
                         "Cadastrar",
                         style: TextStyle(color: Colors.white, fontSize: 20),
                       ),
-                      color: Colors.green,
+                      color: Color.fromRGBO(33, 101, 89, 1),
                       padding: EdgeInsets.fromLTRB(32, 16, 32, 16),
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(32)),
                       onPressed: () {
                         _validarCampos();
                       }
