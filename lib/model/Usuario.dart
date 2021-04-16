@@ -1,4 +1,3 @@
-
 class Usuario {
 
   String _idUsuario;
@@ -50,6 +49,4 @@ class Usuario {
   set nome(String value) {
     _nome = value;
   }
-
-
 }

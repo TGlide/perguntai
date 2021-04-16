@@ -17,14 +17,6 @@ final ThemeData temaPadrao = ThemeData(
   accentColor: Color.fromRGBO(33, 101, 89, 1),
 );
 
-/*
-Tarefas para os alunos:
-1) por este App executando e testar bem
-2) fazer upload de imagens e outros documentos nas mensagens, opcao de abrir PDF ou URL etc
-3) notificar usuario de novas mensagens
-*/
-
-
 
 void main(){
   runApp(MaterialApp(
