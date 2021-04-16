@@ -4,7 +4,10 @@ class Pergunta {
   String _titulo;
   List<String> _respostas;
 
-  Pergunta();
+  Pergunta(String titulo){
+    this.titulo=titulo;
+  }
+
 
   Map<String, dynamic> toMap(){
     Map<String, dynamic> map = {

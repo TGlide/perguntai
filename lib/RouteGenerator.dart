@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:p20202cinza/partida/CriarPartida.dart';
 
 import 'Cadastro.dart';
 import 'Configuracoes.dart';
@@ -36,6 +37,10 @@ class RouteGenerator {
       case "/mensagens" :
         return MaterialPageRoute(
             builder: (_) => Mensagens(args)
+        );
+      case "/partida/criar" :
+        return MaterialPageRoute(
+            builder: (_) => CriarPartida()
         );
       default:
         _erroRota();
