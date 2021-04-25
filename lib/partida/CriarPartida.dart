@@ -9,6 +9,8 @@ import 'package:p20202cinza/model/Pergunta.dart';
 
 import 'package:p20202cinza/model/Pergunta.dart';
 
+import 'AguardarPartidaAdmin.dart';
+
 class CriarPartida extends StatefulWidget {
   @override
   _CriarPartidaState createState() => _CriarPartidaState();
@@ -55,9 +57,14 @@ class _CriarPartidaState extends State<CriarPartida> {
                          style: TextStyle(color: Colors.white, fontSize: 20),),
                       color: Color.fromRGBO(33, 101, 89, 1),
                     padding: EdgeInsets.fromLTRB(8, 8, 8, 8),
-                    onPressed: () {
-                    //_atualizarNomeFirestore();
-                    }
+                    onPressed: (){
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => AguardarPartidaAdmin()
+                          )
+                      );
+                    },
                   ),
                 ),
              ]),

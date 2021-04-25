@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:p20202cinza/partida/CriarPartida.dart';
+import 'package:p20202cinza/partida/EntrarPartida.dart';
 
 class AbaJogar extends StatefulWidget {
   @override
@@ -26,7 +27,7 @@ class _AbaJogarState extends State<AbaJogar> {
                             )
                         );
                       },
-                      color: Color.fromRGBO(72, 153, 138, 1),
+                      color: Color.fromRGBO(72, 153, 138, 1.0),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
 
                       child: Text(
@@ -45,7 +46,14 @@ class _AbaJogarState extends State<AbaJogar> {
                   child: Padding(
                     padding: EdgeInsets.fromLTRB(20.0,50.0,20.0,10.0),
                     child: RaisedButton(
-                      onPressed: () => {},
+                      onPressed: (){
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => EntrarPartida()
+                            )
+                        );
+                      },
                       color: Color.fromRGBO(72, 153, 138, 1),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
 

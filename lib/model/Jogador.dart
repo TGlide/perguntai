@@ -20,19 +20,19 @@ class Jogador {
 
   int get pontos => _pontos;
 
-  set pontos(int value) {
+  set_pontos(int value) {
     _pontos = value;
   }
 
   List<Resposta> get respostasEscolhidas => _respostasEscolhidas;
 
-  set respostasEscolhidas(List<Resposta> value) {
+  set_respostasEscolhidas(List<Resposta> value) {
     _respostasEscolhidas = value;
   }
 
   Usuario get usuario => _usuario;
 
-  set usuario(Usuario value) {
+  set_usuario(Usuario value) {
     _usuario = value;
   }
 }

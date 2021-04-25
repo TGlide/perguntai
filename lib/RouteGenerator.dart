@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:p20202cinza/partida/CriarPartida.dart';
-
+import 'package:p20202cinza/partida/EntrarPartida.dart';
+import 'package:p20202cinza/partida/AguardarPartida.dart';
+import 'package:p20202cinza/partida/AguardarPartidaAdmin.dart';
+import 'package:p20202cinza/partida/Partida.dart';
 import 'Cadastro.dart';
 import 'Configuracoes.dart';
 import 'Home.dart';
@@ -41,6 +44,22 @@ class RouteGenerator {
       case "/partida/criar" :
         return MaterialPageRoute(
             builder: (_) => CriarPartida()
+        );
+      case "/partida/entrar" :
+        return MaterialPageRoute(
+            builder: (_) => EntrarPartida()
+        );
+      case "/partida/aguardar" :
+        return MaterialPageRoute(
+            builder: (_) => AguardarPartida()
+        );
+      case "/partida/aguardar/admin" :
+        return MaterialPageRoute(
+            builder: (_) => AguardarPartidaAdmin()
+        );
+      case "/partida" :
+        return MaterialPageRoute(
+            builder: (_) => Partida()
         );
       default:
         _erroRota();
